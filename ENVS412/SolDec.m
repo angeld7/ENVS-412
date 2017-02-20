@@ -1,0 +1,1 @@
+function SDec = SolDec(JDay);% function SDec = SolDec(JDay);% solar declination% 	SDec 			%solar declination (rad)% 	JDay			%julian date 	SDec  =  0.4102 * cos((2*pi*(JDay-172))/365);

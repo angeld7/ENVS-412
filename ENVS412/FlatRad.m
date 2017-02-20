@@ -1,0 +1,1 @@
+function RFlat = FlatRad(Zs,SDir,Sky);% function RFlat = FlatRad(Zs,SDir,Sky);% 	Zs    =  Zenith angle of sun (rad)% 	SDir  =  Direct solar radiation (W/m2)% 	Sky   =  Diffuse solar radiation (W/m2)% 	RFlat =  Flux on a flat plat (W/m2)RFlat = (SDir .* cos(Zs)) + Sky;

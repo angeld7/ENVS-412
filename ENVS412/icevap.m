@@ -1,0 +1,1 @@
+function vap = icevap(T);%water vapor density (kg/m3) over ice%  T = air temp (K)hold1 = 273.15./T;hold2 = -20.94783 * (hold1-1) - (3.56654 * log(hold1));hold3 = 2.01889 * (1 - (1./hold1));lne   = hold2 + hold3 + log(6.1071);vap   = exp(lne) *100 ./ (461.5*T);

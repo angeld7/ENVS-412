@@ -1,0 +1,1 @@
+function len = DayLength(lat,dec);% function len = DayLength(lat,dec);%  lat     : latitude (rad)%  dec     : solar declination (rad)%  len     : daylength (h)arg     = -tan(lat) .* tan(dec);allsun = (arg <= -1);nosun = (arg >= 1);somsun = 1 - (nosun | allsun); len  = (somsun*(24/pi) .* acos(arg)) + allsun*24;

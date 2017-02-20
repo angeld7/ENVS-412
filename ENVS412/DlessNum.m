@@ -1,0 +1,1 @@
+Nu      = hc * D / k;Re      = u * D / nu;Nu      = (0.34/(0.72^(1/3))) * (Re^0.6) * (Pr^(1/3));Prck    = rhof * Cpf * nu / k;Gr      = (9.8 * Bf / nu^2) * delT * D^3;det     = Gr / Re^2;

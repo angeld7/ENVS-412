@@ -1,0 +1,1 @@
+function SHr = SolHrAng(time,tnoon);% function SHr = SolHrAng(time,tnoon);% 	solar hour angle% 	SHr			%solar hour angle (rad)% 	time			%time of day (hr.frac hr - military)% 	tnoon			%time of solar noon (hr.frac hr - military)	SHr   =  (pi/12) * (time - tnoon);

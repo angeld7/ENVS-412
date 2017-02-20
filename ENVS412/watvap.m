@@ -1,0 +1,1 @@
+function vap = watvap(T);%saturation vapor density (kg/m3) over water%  T = Temp (K);hold1 = -18.19728*((373.15./T)-1) + 5.02808*log(373.15./T);hold2 = -3.1813E-7*(exp(26.1205 * (1-(T/373.15))) -1);hold3 = 1.8726E-2 * (exp(-8.03945 * ((373.15./T)-1)) -1);lne   = hold1 + hold2 + hold3 + log(1013.26);vap   = exp(lne)*100 ./ (461.5*T);

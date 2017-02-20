@@ -1,0 +1,1 @@
+function s = vapslop(Tc);%slope of vapor density function %Tc = air temp (¡C)s1 = 3.4876E-4 + (1.9511E-5 * Tc);s2 = (4.4728E-7 * Tc.^2) + (1.1217E-8 * Tc.^3);s  = s1 + s2;
